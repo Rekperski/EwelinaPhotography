@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ewelina Photography | Profesjonalna Fotografia Ślubna i Eventowa</title>
+    <meta name="description"
+        content="Uwiecznij swoje najpiękniejsze chwile. Profesjonalna fotografia ślubna, chrzciny i eventy. Sprawdź portfolio Ewelina Photography.">
+    <!-- Favicon Placeholder -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📸</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-circle"></div>
+            <span class="loader-text">EWELINA</span>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Social Sidebar -->
+    <div class="social-sidebar">
+        <a href="#" target="_blank">Instagram</a>
+        <a href="#" target="_blank">Facebook</a>
+    </div>
+
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="logo">Ewelina<span>Photography</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Start</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#about">O mnie</a></li>
+                <li><a href="#offer">Oferta</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Otwórz menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-image" style="background-image: url('assets/wedding.jpg');"></div>
+            <div class="hero-content container">
+                <h1 class="fade-in">Utrwalam momenty,<br>które <span>zostają na zawsze</span></h1>
+                <p class="fade-in">Profesjonalna fotografia: Wesela • Chrzciny • 18-nastki</p>
+                <div class="hero-actions fade-in">
+                    <a href="#gallery" class="btn btn-primary">Zobacz Galerię</a>
+                    <a href="#contact" class="btn btn-outline">Zarezerwuj Termin</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery container section-padding">
+            <div class="section-header">
+                <h2 class="section-title">Moja Twórczość</h2>
+                <div class="gallery-filters">
+                    <button class="filter-btn active" data-filter="all">Wszystkie</button>
+                    <button class="filter-btn" data-filter="wedding">Wesela</button>
+                    <button class="filter-btn" data-filter="christening">Chrzciny</button>
+                    <button class="filter-btn" data-filter="birthday">18-nastki</button>
+                </div>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item wedding">
+                    <img src="assets/wedding.jpg" alt="Ślub w plenerze" loading="lazy">
+                    <div class="item-overlay"><span>ZOBACZ</span></div>
+                </div>
+                <div class="gallery-item christening">
+                    <img src="assets/christening.jpg" alt="Uroczystość chrztu" loading="lazy">
+                    <div class="item-overlay"><span>ZOBACZ</span></div>
+                </div>
+                <div class="gallery-item birthday">
+                    <img src="assets/birthday.jpg" alt="Przyjęcie urodzinowe" loading="lazy">
+                    <div class="item-overlay"><span>ZOBACZ</span></div>
+                </div>
+                <!-- Duplicate for more items in the grid -->
+                <div class="gallery-item wedding">
+                    <img src="assets/wedding.jpg" alt="Wesele" loading="lazy">
+                    <div class="item-overlay"><span>ZOBACZ</span></div>
+                </div>
+                <div class="gallery-item christening">
+                    <img src="assets/christening.jpg" alt="Chrzest Święty" loading="lazy">
+                    <div class="item-overlay"><span>ZOBACZ</span></div>
+                </div>
+                <div class="gallery-item birthday">
+                    <img src="assets/birthday.jpg" alt="Impreza 18-nastka" loading="lazy">
+                    <div class="item-overlay"><span>ZOBACZ</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about section-padding">
+            <div class="container grid-2">
+                <div class="about-image fade-in">
+                    <img src="assets/birthday.jpg" alt="Ewelina Photographer" loading="lazy"
+                        style="border-radius: 8px; width: 100%; height: auto;">
+                </div>
+                <div class="about-text fade-in">
+                    <h2 class="section-title">O mnie</h2>
+                    <p>Cześć! Jestem Ewelina i pasjonuję się chwytaniem ulotnych chwil. Fotografia dla mnie to nie tylko
+                        praca, to sposób na opowiadanie historii Twoich najważniejszych dni.</p>
+                    <p>Specjalizuję się w reportażach ślubnych oraz imprezach okolicznościowych. Moim celem jest, abyś
+                        patrząc na zdjęcia po latach, czuł te same emocje, co w dniu ich wykonania.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-camera-retro"></i>
+                            <h3 class="stat-number" data-target="500">0</h3>
+                            <p>Zrealizowanych sesji</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-heart"></i>
+                            <h3 class="stat-number" data-target="100">0</h3>
+                            <p>Zadowolenia %</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-award"></i>
+                            <h3 class="stat-number" data-target="5">0</h3>
+                            <p>Lat doświadczenia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="offer" class="offer section-padding bg-alt">
+            <div class="container text-center">
+                <h2 class="section-title">Oferta</h2>
+                <div class="offer-grid">
+                    <div class="offer-card fade-in">
+                        <div class="offer-icon"><i class="fas fa-church"></i></div>
+                        <h3>Reportaż Ślubny</h3>
+                        <p class="price"><span>od</span> 2500 zł</p>
+                        <ul class="offer-features">
+                            <li><i class="fas fa-check"></i> Przygotowania + Ceremonia</li>
+                            <li><i class="fas fa-check"></i> Wesele do oczepin (01:00)</li>
+                            <li><i class="fas fa-check"></i> 400+ zdjęć po autorskiej obróbce</li>
+                            <li><i class="fas fa-check"></i> Galeria online dla gości</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary">Sprawdź dostępność</a>
+                    </div>
+                    <div class="offer-card fade-in featured">
+                        <div class="offer-badge">Najczęściej wybierany pakiet</div>
+                        <div class="offer-icon"><i class="fas fa-baby"></i></div>
+                        <h3>Chrzciny / 18-nastki</h3>
+                        <p class="price"><span>od</span> 600 zł</p>
+                        <ul class="offer-features">
+                            <li><i class="fas fa-check"></i> Reportaż z całej uroczystości</li>
+                            <li><i class="fas fa-check"></i> Mini sesja plenerowa w dniu eventu</li>
+                            <li><i class="fas fa-check"></i> 50+ zdjęć w pełnej rozdzielczości</li>
+                            <li><i class="fas fa-check"></i> Pendrive w eleganckim pudełku</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary">Zarezerwuj teraz</a>
+                    </div>
+                    <div class="offer-card fade-in">
+                        <div class="offer-icon"><i class="fas fa-camera"></i></div>
+                        <h3>Sesje Indywidualne</h3>
+                        <p class="price"><span>od</span> 300 zł</p>
+                        <ul class="offer-features">
+                            <li><i class="fas fa-check"></i> 1-2 godziny kreatywnej sesji</li>
+                            <li><i class="fas fa-check"></i> Dobór lokalizacji lub studio</li>
+                            <li><i class="fas fa-check"></i> 15 starannie obrobionych ujęć</li>
+                            <li><i class="fas fa-check"></i> Wysokiej jakości wydruki 15x23</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary">Umów się na sesję</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials section-padding bg-alt">
+            <div class="container text-center">
+                <h2 class="section-title">Opinie Klientów</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card fade-in">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>"Ewelina stworzyła dla nas przepiękną pamiątkę z naszego ślubu. Jej spokój i profesjonalizm
+                            pozwoliły nam czuć się swobodnie przed obiektywem. Zdjęcia przeszły nasze najśmielsze
+                            oczekiwania!"</p>
+                        <strong>Anna i Piotr</strong>
+                    </div>
+                    <div class="testimonial-card fade-in">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>"Najlepsza fotografka z jaką mieliśmy okazję współpracować. Potrafi uchwycić emocje, których
+                            sami nie zauważyliśmy. Chrzest naszej córki został uwieczniony w sposób bajkowy."</p>
+                        <strong>Karolina i Marek</strong>
+                    </div>
+                    <div class="testimonial-card fade-in">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>"Pełen profesjonalizm i świetne podejście do młodych ludzi. Moja 18-nastka została
+                            sfotografowana idealnie – dynamiczne ujęcia, świetne kolory i super atmosfera podczas
+                            sesji."</p>
+                        <strong>Marta S.</strong>
+                    </div>
+                    <div class="testimonial-card fade-in">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>"Zdjęcia z sesji narzeczeńskiej są po prostu magiczne. Ewelina ma niesamowite oko do światła
+                            i detali. Czujemy się dumni, pokazując te zdjęcia rodzinie."</p>
+                        <strong>Kasia i Tomek</strong>
+                    </div>
+                    <div class="testimonial-card fade-in">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>"Polecam z całego serca! Ewelina to nie tylko świetna fotografka, ale też przemiła osoba.
+                            Współpraca przebiegła bezstresowo, a efekty końcowe zachwyciły wszystkich gości."</p>
+                        <strong>Michał W.</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq section-padding">
+            <div class="container">
+                <h2 class="section-title text-center">Częste Pytania</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Jak długo czeka się na gotowe zdjęcia?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            Standardowy czas oczekiwania na gotowy reportaż ślubny to 30 dni roboczych. Sesje mniejsze
+                            (chrzciny, 18-nastki) oddaję zazwyczaj w ciągu 14 dni.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Czy pracujesz z drugim fotografem?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            Pracuję głównie sama, co pozwala mi na większą dyskrecję podczas uroczystości. W przypadku
+                            bardzo dużych wesel możemy porozmawiać o zaangażowaniu drugiego fotografa.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Czy posiadasz upoważnienie do fotografowania w kościele?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            Tak, posiadam ważne ukończone przygotowanie dla fotografów i operatorów kamer w zakresie
+                            celebracji liturgicznych.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="availability" class="availability section-padding bg-alt">
+            <div class="container text-center">
+                <h2 class="section-title">Terminy 2026</h2>
+                <p style="margin-bottom: 50px; color: var(--text-secondary);">Planujesz uroczystość w nadchodzącym roku?
+                    Sprawdź aktualny stan rezerwacji:</p>
+                <div class="calendar-container">
+                    <div class="calendar-header">
+                        <button id="prevMonth"><i class="fas fa-chevron-left"></i></button>
+                        <h3 id="currentMonthYear">Styczeń 2026</h3>
+                        <button id="nextMonth"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div class="calendar-days-header">
+                        <span>Pon</span><span>Wt</span><span>Śr</span><span>Czw</span><span>Pt</span><span>Sob</span><span>Ndz</span>
+                    </div>
+                    <div id="calendarDays" class="calendar-grid">
+                        <!-- Days will be generated by JS -->
+                    </div>
+                </div>
+                <div class="availability-legend">
+                    <span><i class="fas fa-square" style="color: rgba(255,255,255,0.05);"></i> Wolny</span>
+                    <span><i class="fas fa-square" style="color: var(--accent-gold);"></i> Zarezerwowany</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section-padding">
+            <div class="container">
+                <div class="contact-cards">
+                    <a href="tel:+48123456789" class="contact-card fade-in">
+                        <i class="fas fa-phone-alt"></i>
+                        <h3>Zadzwoń do mnie</h3>
+                        <p>+48 123 456 789</p>
+                    </a>
+                    <a href="mailto:kontakt@ewelinaphotography.pl" class="contact-card fade-in">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Napisz e-mail</h3>
+                        <p>kontakt@ewelinaphotography.pl</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        EWELINA
+                        <span>Photography</span>
+                    </a>
+                    <p>Chwytam emocje i tworzę pamiątki, które zostają z Tobą na całe życie. Specjalizuję się w
+                        profesjonalnej fotografii okolicznościowej.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="#about">O mnie</a></li>
+                        <li><a href="#gallery">Galeria</a></li>
+                        <li><a href="#offer">Oferta</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Social Media</h4>
+                    <div class="footer-social-icons">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ewelina Photography. Wszelkie prawa zastrzeżone.</p>
+                <div class="footer-bottom-links">
+                    <a href="polityka.html">Polityka prywatności</a>
+                    <a href="regulamin.html">Regulamin</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <button class="lightbox-prev" aria-label="Poprzednie">&lsaquo;</button>
+        <button class="lightbox-next" aria-label="Następne">&rsaquo;</button>
+        <div class="lightbox-content">
+            <img src="" alt="Powiększone zdjęcie">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <div id="backToTop" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

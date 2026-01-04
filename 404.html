@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Strona nie znaleziona | Ewelina Photography</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📸</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .error-page {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: var(--bg-primary);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .error-content {
+            z-index: 10;
+            padding: 40px;
+        }
+
+        .error-code {
+            font-family: var(--font-heading);
+            font-size: clamp(100px, 20vw, 200px);
+            line-height: 1;
+            color: var(--accent-gold);
+            margin-bottom: 20px;
+            opacity: 0.2;
+        }
+
+        .error-title {
+            font-family: var(--font-heading);
+            font-size: clamp(32px, 5vw, 48px);
+            margin-bottom: 20px;
+        }
+
+        .error-text {
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+            font-size: 18px;
+            max-width: 500px;
+        }
+
+        .error-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('assets/hero.jpg') center/cover no-repeat;
+            filter: brightness(0.2) grayscale(0.5);
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="error-page">
+        <div class="error-bg"></div>
+        <div class="error-content">
+            <div class="error-code">404</div>
+            <h1 class="error-title">Ups! Ta chwila uciekła.</h1>
+            <p class="error-text">Strona, której szukasz, nie istnieje lub została przeniesiona. Wróćmy do pięknych
+                wspomnień.</p>
+            <a href="index.html" class="btn btn-primary">Wróć do Portfolio</a>
+        </div>
+    </div>
+</body>
+
+</html>
